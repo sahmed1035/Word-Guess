@@ -5,57 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Guess Game</title>
+    <title>Pokémon Word Guess Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <!-- during the first time loading the page, the body tag will call the initialize_Game() -->
+
 <body onload="initialize_Game()">
 
     <div class="container">
-
         <div class="row">
             <div class="col-md-12">
-
-                <div id="game-section">
-                    <p>Press any key to get started!</p>
-                    <div>
-                      <h3 class="section-title">Wins</h3>
-                      <!-- The div where our wins will be shown. -->
-                      <div id="showWins"></div>
+                <!--Card-->
+                <div class="card">
+                    <div class="card-header">
+                        <h2> Welcome to the Pokémon Word Guess Game!</h2>
                     </div>
 
-                    <div>
-                        <h3 class="section-title">Losses</h3>
-                        <!-- The div where our wins will be shown. -->
-                        <div id="showLosses"></div>
-                      </div>
-                    <div id="current-word-section">
-                      <h3 class="section-title">Current Word</h3>
-                      <!-- The div where our current word (and guessing progress) will be shown. -->
-                      <div id="current-word"></div>
-                      <div id="underlinediv"></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Press any key to get started!
+                        </p>
+
+                        <p class="card-text">
+                            <!--Other col-->
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <!--First col ash pic-->
+                                    <img alt="Word Picture" src="./assets/images/ash-bg.jpg" />
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!--second col -->
+
+                                    <table class="table table-striped ">
+                                        <thead>
+                                            <tr>
+
+                                                <th scope="col">WINS</th>
+                                                <th scope="col">LOSSES</th>
+                                                <th scope="col">REMAINING GUESSES</th>
+                                                <th scope="col">WRONG GUESSES</th>
+                                                <!-- <th scope="col">CURRENT WORD</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td>
+                                                    <div id="showWins"></div>
+                                                </td>
+                                                <td>
+                                                    <div id="showLosses"></div>
+                                                </td>
+                                                <td>
+                                                    <div id="guesses-remaining"></div>
+                                                </td>
+                                                <td>
+                                                    <div id="guessed-letters"></div>
+                                                </td>
+                                                <!-- <td>
+                                                    <div id="current-word"></div>
+                                                </td> -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                    <div id="current-word-section">
+                                        <h3 class="section-title">Current Word</h3>
+                                        <!-- The div where our current word (and guessing progress) will be shown. -->
+                                        <td><div id="current-word"></div></td>
+                                        
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    <br><br><br><br> <br>
+                                    <br><br> <br>
+                                    <!--third col-->
+                                    <img class="rounded float-right"  alt="Word Picture" src="./assets/images/absol.jpg" />
+                                </div>
+
+                            </div>
+
                     </div>
-                    <div id="guesses-remaining-section">
-                      <h3 class="section-title">Number of Guesses Remaining</h3>
-                      <!-- The div where our remaining guesses will be shown. -->
-                      <div id="guesses-remaining"></div>
-                    </div>
-                    <div id="guessed-letters-section">
-                      <h3 class="section-title">Letters Already Guessed</h3>
-                      <!-- The div where our guesses letters will be shown. -->
-                      <div id="guessed-letters"></div>
-                    </div>
-                  </div>
-                
+                </div>
+
+                </p>
+
+            </div>
+            <div class="card-footer">
+
             </div>
         </div>
-
+    </div>
     </div>
 
 
-<script src="assets/javascript/wordguess.js"></script>
+    <script src="assets/javascript/wordguess.js"></script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

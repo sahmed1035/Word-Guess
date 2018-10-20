@@ -1,0 +1,22 @@
+p {
+    color: rgb(128, 5, 76); font-size: 34px;text-align: center; 
+    font-style: oblique; margin-top: 20px; padding-bottom: 30px;
+  }
+
+  .card-header {
+    color: rgb(92, 1, 1); font-weight: bolder; text-align: center; font-size: 40px;line-height: 50px;
+  }
+
+ .section-title{ font-size: 30px; font-weight: bold; float: center;margin-left: 30%;
+
+ }
+
+ .container{
+    background-image: url("../images/eevee.png"); margin-top: 2%; 
+ }
+
+ #current-word{
+    font-weight: bolder; text-align: center; font-size: 34px;line-height: 50px;
+ }
+
+ 
